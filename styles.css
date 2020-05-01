@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* background: linear-gradient(rgba(48, 31, 31, 0.7), rgba(54, 54, 54, 0.8)); */
+    background: radial-gradient(87.7% 224.5% at 78.16% 47.81%, #19B5CA 0%, rgba(37, 231, 207, 0.81) 100%);
+    height: 100vh;
+}
+.myRow {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.left-side {
+    /* background: red; */
+    position: relative;
+}
+.myContainer {
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-55%);
+}
+.myContainer img {
+    margin-left: 90px;
+}
+.right-side {
+    width: 100% !important;
+    height: 100%;
+    position: relative;
+}
+.card-right {
+    position: absolute;
+    max-width: 65%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#user-name, #password, #cPassword, #email:focus {
+    border-color: none;
+    box-shadow: none;
+}
+
+.modal-success {
+    display: none;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+div.Box {
+    top: 50%;
+    left: 50%;
+    padding: 30px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background: #fff;
+    border-radius: 5px;
+}
+.fa-times {
+    cursor: pointer;
+    float: right;
+}
